@@ -9,23 +9,21 @@ import android.view.View;
 import android.view.ViewStub;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     Button btn;
     View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.merge);
         btn = (Button) findViewById(R.id.btn);
-
-
-
     }
 
-
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
+
+       return true;
     }
 
     @Override
